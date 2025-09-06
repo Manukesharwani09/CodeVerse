@@ -32,7 +32,7 @@ export const getUser = query({
         if(!args.userId) return null;
 
         const user = await ctx.db.query("users")
-        .withIndex("byUserId")
+        .withIndex("by_user_id")
         .filter(q => q.eq(q.field("userId"), args.userId))
         .first();
 
