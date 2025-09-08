@@ -46,7 +46,7 @@ A mutation function looks like:
 
 ```ts
 // convex/myFunctions.ts
-import { mutation } from "./_generated/server";
+import {} from "./_generated/server";
 import { v } from "convex/values";
 
 export const myMutationFunction = mutation({
